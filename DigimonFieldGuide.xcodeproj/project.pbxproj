@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		243A50822A144ACF00FBD7A6 /* DigimonFieldGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50812A144ACF00FBD7A6 /* DigimonFieldGuideApp.swift */; };
+		243A50862A144AD300FBD7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243A50852A144AD300FBD7A6 /* Assets.xcassets */; };
+		243A50892A144AD300FBD7A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243A50882A144AD300FBD7A6 /* Preview Assets.xcassets */; };
+		243A509D2A144AD300FBD7A6 /* DigimonFieldGuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A509C2A144AD300FBD7A6 /* DigimonFieldGuideUITests.swift */; };
+		243A509F2A144AD400FBD7A6 /* DigimonFieldGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A509E2A144AD400FBD7A6 /* DigimonFieldGuideUITestsLaunchTests.swift */; };
+		243A50AF2A144C2200FBD7A6 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50AE2A144C2200FBD7A6 /* Digimon.swift */; };
+		243A50B12A144FCE00FBD7A6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50B02A144FCE00FBD7A6 /* Bundle+Extensions.swift */; };
+		243A50B42A1453F200FBD7A6 /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50B32A1453F200FBD7A6 /* DigimonViewModel.swift */; };
+		243A50B62A14541700FBD7A6 /* DigimonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50B52A14541700FBD7A6 /* DigimonListView.swift */; };
+		243A50B82A14543200FBD7A6 /* DigimonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50B72A14543200FBD7A6 /* DigimonCellView.swift */; };
+		243A50BA2A14544500FBD7A6 /* DigimonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50B92A14544500FBD7A6 /* DigimonDetailsView.swift */; };
+		243A50BC2A14545800FBD7A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50BB2A14545800FBD7A6 /* Constants.swift */; };
+		243A50BE2A14569B00FBD7A6 /* DigimonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50BD2A14569B00FBD7A6 /* DigimonService.swift */; };
+		243A50C02A14587700FBD7A6 /* DigimonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50BF2A14587700FBD7A6 /* DigimonManager.swift */; };
+		243A50C22A145AC400FBD7A6 /* MockDigimonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50C12A145AC400FBD7A6 /* MockDigimonManager.swift */; };
+		243A50C72A14671C00FBD7A6 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50C62A14671C00FBD7A6 /* ImageView.swift */; };
+		243A50C92A146C4D00FBD7A6 /* DigimonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50C82A146C4D00FBD7A6 /* DigimonViewModelTests.swift */; };
+		243A50CB2A14715800FBD7A6 /* DigimonModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243A50CA2A14715800FBD7A6 /* DigimonModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		243A508F2A144AD300FBD7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 243A50762A144ACF00FBD7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 243A507D2A144ACF00FBD7A6;
+			remoteInfo = DigimonFieldGuide;
+		};
+		243A50992A144AD300FBD7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 243A50762A144ACF00FBD7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 243A507D2A144ACF00FBD7A6;
+			remoteInfo = DigimonFieldGuide;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		243A507E2A144ACF00FBD7A6 /* DigimonFieldGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigimonFieldGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		243A50812A144ACF00FBD7A6 /* DigimonFieldGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonFieldGuideApp.swift; sourceTree = "<group>"; };
+		243A50852A144AD300FBD7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		243A50882A144AD300FBD7A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		243A508E2A144AD300FBD7A6 /* DigimonFieldGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigimonFieldGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		243A50982A144AD300FBD7A6 /* DigimonFieldGuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigimonFieldGuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		243A509C2A144AD300FBD7A6 /* DigimonFieldGuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonFieldGuideUITests.swift; sourceTree = "<group>"; };
+		243A509E2A144AD400FBD7A6 /* DigimonFieldGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonFieldGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		243A50AE2A144C2200FBD7A6 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
+		243A50B02A144FCE00FBD7A6 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		243A50B32A1453F200FBD7A6 /* DigimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModel.swift; sourceTree = "<group>"; };
+		243A50B52A14541700FBD7A6 /* DigimonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonListView.swift; sourceTree = "<group>"; };
+		243A50B72A14543200FBD7A6 /* DigimonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCellView.swift; sourceTree = "<group>"; };
+		243A50B92A14544500FBD7A6 /* DigimonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonDetailsView.swift; sourceTree = "<group>"; };
+		243A50BB2A14545800FBD7A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		243A50BD2A14569B00FBD7A6 /* DigimonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonService.swift; sourceTree = "<group>"; };
+		243A50BF2A14587700FBD7A6 /* DigimonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonManager.swift; sourceTree = "<group>"; };
+		243A50C12A145AC400FBD7A6 /* MockDigimonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDigimonManager.swift; sourceTree = "<group>"; };
+		243A50C62A14671C00FBD7A6 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		243A50C82A146C4D00FBD7A6 /* DigimonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModelTests.swift; sourceTree = "<group>"; };
+		243A50CA2A14715800FBD7A6 /* DigimonModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		243A507B2A144ACF00FBD7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A508B2A144AD300FBD7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A50952A144AD300FBD7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		243A50752A144ACF00FBD7A6 = {
+			isa = PBXGroup;
+			children = (
+				243A50802A144ACF00FBD7A6 /* DigimonFieldGuide */,
+				243A50912A144AD300FBD7A6 /* DigimonFieldGuideTests */,
+				243A509B2A144AD300FBD7A6 /* DigimonFieldGuideUITests */,
+				243A507F2A144ACF00FBD7A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		243A507F2A144ACF00FBD7A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				243A507E2A144ACF00FBD7A6 /* DigimonFieldGuide.app */,
+				243A508E2A144AD300FBD7A6 /* DigimonFieldGuideTests.xctest */,
+				243A50982A144AD300FBD7A6 /* DigimonFieldGuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		243A50802A144ACF00FBD7A6 /* DigimonFieldGuide */ = {
+			isa = PBXGroup;
+			children = (
+				243A50812A144ACF00FBD7A6 /* DigimonFieldGuideApp.swift */,
+				243A50852A144AD300FBD7A6 /* Assets.xcassets */,
+				243A50B22A144FD700FBD7A6 /* Utilities */,
+				243A50C32A14642100FBD7A6 /* Managers */,
+				243A50AB2A144AE900FBD7A6 /* Models */,
+				243A50AC2A144AF400FBD7A6 /* Views */,
+				243A50AD2A144AFD00FBD7A6 /* ViewModels */,
+				243A50872A144AD300FBD7A6 /* Preview Content */,
+			);
+			path = DigimonFieldGuide;
+			sourceTree = "<group>";
+		};
+		243A50872A144AD300FBD7A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				243A50882A144AD300FBD7A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		243A50912A144AD300FBD7A6 /* DigimonFieldGuideTests */ = {
+			isa = PBXGroup;
+			children = (
+				243A50CA2A14715800FBD7A6 /* DigimonModelTests.swift */,
+				243A50C82A146C4D00FBD7A6 /* DigimonViewModelTests.swift */,
+			);
+			path = DigimonFieldGuideTests;
+			sourceTree = "<group>";
+		};
+		243A509B2A144AD300FBD7A6 /* DigimonFieldGuideUITests */ = {
+			isa = PBXGroup;
+			children = (
+				243A509C2A144AD300FBD7A6 /* DigimonFieldGuideUITests.swift */,
+				243A509E2A144AD400FBD7A6 /* DigimonFieldGuideUITestsLaunchTests.swift */,
+			);
+			path = DigimonFieldGuideUITests;
+			sourceTree = "<group>";
+		};
+		243A50AB2A144AE900FBD7A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				243A50AE2A144C2200FBD7A6 /* Digimon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		243A50AC2A144AF400FBD7A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				243A50B52A14541700FBD7A6 /* DigimonListView.swift */,
+				243A50B72A14543200FBD7A6 /* DigimonCellView.swift */,
+				243A50B92A14544500FBD7A6 /* DigimonDetailsView.swift */,
+				243A50C62A14671C00FBD7A6 /* ImageView.swift */,
+			);
+			name = Views;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		243A50AD2A144AFD00FBD7A6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				243A50B32A1453F200FBD7A6 /* DigimonViewModel.swift */,
+			);
+			name = ViewModels;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		243A50B22A144FD700FBD7A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				243A50BB2A14545800FBD7A6 /* Constants.swift */,
+				243A50B02A144FCE00FBD7A6 /* Bundle+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		243A50C32A14642100FBD7A6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				243A50BD2A14569B00FBD7A6 /* DigimonService.swift */,
+				243A50BF2A14587700FBD7A6 /* DigimonManager.swift */,
+				243A50C12A145AC400FBD7A6 /* MockDigimonManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		243A507D2A144ACF00FBD7A6 /* DigimonFieldGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243A50A22A144AD400FBD7A6 /* Build configuration list for PBXNativeTarget "DigimonFieldGuide" */;
+			buildPhases = (
+				243A507A2A144ACF00FBD7A6 /* Sources */,
+				243A507B2A144ACF00FBD7A6 /* Frameworks */,
+				243A507C2A144ACF00FBD7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigimonFieldGuide;
+			productName = DigimonFieldGuide;
+			productReference = 243A507E2A144ACF00FBD7A6 /* DigimonFieldGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		243A508D2A144AD300FBD7A6 /* DigimonFieldGuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243A50A52A144AD400FBD7A6 /* Build configuration list for PBXNativeTarget "DigimonFieldGuideTests" */;
+			buildPhases = (
+				243A508A2A144AD300FBD7A6 /* Sources */,
+				243A508B2A144AD300FBD7A6 /* Frameworks */,
+				243A508C2A144AD300FBD7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				243A50902A144AD300FBD7A6 /* PBXTargetDependency */,
+			);
+			name = DigimonFieldGuideTests;
+			productName = DigimonFieldGuideTests;
+			productReference = 243A508E2A144AD300FBD7A6 /* DigimonFieldGuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		243A50972A144AD300FBD7A6 /* DigimonFieldGuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243A50A82A144AD400FBD7A6 /* Build configuration list for PBXNativeTarget "DigimonFieldGuideUITests" */;
+			buildPhases = (
+				243A50942A144AD300FBD7A6 /* Sources */,
+				243A50952A144AD300FBD7A6 /* Frameworks */,
+				243A50962A144AD300FBD7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				243A509A2A144AD300FBD7A6 /* PBXTargetDependency */,
+			);
+			name = DigimonFieldGuideUITests;
+			productName = DigimonFieldGuideUITests;
+			productReference = 243A50982A144AD300FBD7A6 /* DigimonFieldGuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		243A50762A144ACF00FBD7A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					243A507D2A144ACF00FBD7A6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					243A508D2A144AD300FBD7A6 = {
+						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+						TestTargetID = 243A507D2A144ACF00FBD7A6;
+					};
+					243A50972A144AD300FBD7A6 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 243A507D2A144ACF00FBD7A6;
+					};
+				};
+			};
+			buildConfigurationList = 243A50792A144ACF00FBD7A6 /* Build configuration list for PBXProject "DigimonFieldGuide" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 243A50752A144ACF00FBD7A6;
+			productRefGroup = 243A507F2A144ACF00FBD7A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				243A507D2A144ACF00FBD7A6 /* DigimonFieldGuide */,
+				243A508D2A144AD300FBD7A6 /* DigimonFieldGuideTests */,
+				243A50972A144AD300FBD7A6 /* DigimonFieldGuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		243A507C2A144ACF00FBD7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243A50892A144AD300FBD7A6 /* Preview Assets.xcassets in Resources */,
+				243A50862A144AD300FBD7A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A508C2A144AD300FBD7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A50962A144AD300FBD7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		243A507A2A144ACF00FBD7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243A50C72A14671C00FBD7A6 /* ImageView.swift in Sources */,
+				243A50822A144ACF00FBD7A6 /* DigimonFieldGuideApp.swift in Sources */,
+				243A50AF2A144C2200FBD7A6 /* Digimon.swift in Sources */,
+				243A50B82A14543200FBD7A6 /* DigimonCellView.swift in Sources */,
+				243A50BE2A14569B00FBD7A6 /* DigimonService.swift in Sources */,
+				243A50B12A144FCE00FBD7A6 /* Bundle+Extensions.swift in Sources */,
+				243A50C22A145AC400FBD7A6 /* MockDigimonManager.swift in Sources */,
+				243A50B62A14541700FBD7A6 /* DigimonListView.swift in Sources */,
+				243A50BA2A14544500FBD7A6 /* DigimonDetailsView.swift in Sources */,
+				243A50C02A14587700FBD7A6 /* DigimonManager.swift in Sources */,
+				243A50B42A1453F200FBD7A6 /* DigimonViewModel.swift in Sources */,
+				243A50BC2A14545800FBD7A6 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A508A2A144AD300FBD7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243A50C92A146C4D00FBD7A6 /* DigimonViewModelTests.swift in Sources */,
+				243A50CB2A14715800FBD7A6 /* DigimonModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A50942A144AD300FBD7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243A509F2A144AD400FBD7A6 /* DigimonFieldGuideUITestsLaunchTests.swift in Sources */,
+				243A509D2A144AD300FBD7A6 /* DigimonFieldGuideUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		243A50902A144AD300FBD7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 243A507D2A144ACF00FBD7A6 /* DigimonFieldGuide */;
+			targetProxy = 243A508F2A144AD300FBD7A6 /* PBXContainerItemProxy */;
+		};
+		243A509A2A144AD300FBD7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 243A507D2A144ACF00FBD7A6 /* DigimonFieldGuide */;
+			targetProxy = 243A50992A144AD300FBD7A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		243A50A02A144AD400FBD7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		243A50A12A144AD400FBD7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		243A50A32A144AD400FBD7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DigimonFieldGuide/Preview Content\"";
+				DEVELOPMENT_TEAM = K5CK74M6KR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadrzv.DigimonFieldGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		243A50A42A144AD400FBD7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DigimonFieldGuide/Preview Content\"";
+				DEVELOPMENT_TEAM = K5CK74M6KR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadrzv.DigimonFieldGuide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		243A50A62A144AD400FBD7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5CK74M6KR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadrzv.DigimonFieldGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigimonFieldGuide.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigimonFieldGuide";
+			};
+			name = Debug;
+		};
+		243A50A72A144AD400FBD7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5CK74M6KR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadrzv.DigimonFieldGuideTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigimonFieldGuide.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigimonFieldGuide";
+			};
+			name = Release;
+		};
+		243A50A92A144AD400FBD7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5CK74M6KR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadrzv.DigimonFieldGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigimonFieldGuide;
+			};
+			name = Debug;
+		};
+		243A50AA2A144AD400FBD7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5CK74M6KR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadrzv.DigimonFieldGuideUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigimonFieldGuide;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		243A50792A144ACF00FBD7A6 /* Build configuration list for PBXProject "DigimonFieldGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243A50A02A144AD400FBD7A6 /* Debug */,
+				243A50A12A144AD400FBD7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		243A50A22A144AD400FBD7A6 /* Build configuration list for PBXNativeTarget "DigimonFieldGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243A50A32A144AD400FBD7A6 /* Debug */,
+				243A50A42A144AD400FBD7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		243A50A52A144AD400FBD7A6 /* Build configuration list for PBXNativeTarget "DigimonFieldGuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243A50A62A144AD400FBD7A6 /* Debug */,
+				243A50A72A144AD400FBD7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		243A50A82A144AD400FBD7A6 /* Build configuration list for PBXNativeTarget "DigimonFieldGuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243A50A92A144AD400FBD7A6 /* Debug */,
+				243A50AA2A144AD400FBD7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 243A50762A144ACF00FBD7A6 /* Project object */;
+}
